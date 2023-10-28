@@ -2,6 +2,9 @@ package org.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.Scanner;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -10,14 +13,72 @@ public class Main {
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        Scanner scanner = new Scanner(System.in);
+        while(true)
+        {
+            System.out.println("operation");
+            System.out.println("1 +");
+            System.out.println("2 -");
+            System.out.println("3 *");
+            System.out.println("4 /");
+            System.out.println("5 power");
+            int selection=scanner.nextInt();
+            double res=0.0;
+            if(selection==6)
+            {
+                break;
+            }
+            System.out.print("enter 1st number:");
+            double num1=scanner.nextDouble();
+            System.out.print("enter 2nd number:");
+            double num2=scanner.nextDouble();
+            switch(selection){
+                case 1:
+                    res=add(num1,num2);
+                    break;
+                case 2:
+                    res=sub(num1,num2);
+                    break;
+                case 3:
+                    res=mul(num1,num2);
+                    break;
+                case 4:
+                    res=divison(num1,num2);
+                    break;
+                case 5:
+                    res=power(num1,num2);
+                    break;
+                default:
+                    System.out.println("No operation selected");
+            }
+            System.out.println("Result:"+res);
         }
+        scanner.close();
+        logger.info("execution ended");
+    }
+    public static double add(double n1,double n2)
+    {
+        return n1+n2;
+    }
+    public static double sub(double n1,double n2)
+    {
+        return n1-n2;
+    }
+    public static double mul(double n1,double n2)
+    {
+        return n1*n2;
+    }
+    public static double power(double n1,double n2)
+    {
+        return Math.pow(n1,n2);
+    }
+    public static double divison(double n1,double n2)
+    {
+       if(n2==0)
+       {
+           System.out.println("error");
+           return Double.NaN;
+       }
+       return n1/n2;
     }
 }
