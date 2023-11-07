@@ -1,19 +1,14 @@
 package org.example;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.Scanner;
-
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
-
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
         Scanner scanner = new Scanner(System.in);
+        logger.info("Execution Started");
         while(true)
         {
             System.out.println("operation");
@@ -35,26 +30,32 @@ public class Main {
             switch(selection){
                 case 1:
                     res=add(num1,num2);
+                    logger.info(Double.toString(num1)+ " add "+Double.toString(num2));
                     break;
                 case 2:
                     res=sub(num1,num2);
+                    logger.info(Double.toString(num1)+ " subract "+Double.toString(num2));
                     break;
                 case 3:
                     res=mul(num1,num2);
+                    logger.info(Double.toString(num1)+ " multiply "+Double.toString(num2));
                     break;
                 case 4:
-                    res=divison(num1,num2);
+                    res=division(num1,num2);
+                    logger.info(Double.toString(num1)+ " divide "+Double.toString(num2));
                     break;
                 case 5:
                     res=power(num1,num2);
+                    logger.info(Double.toString(num1)+ " power "+Double.toString(num2));
                     break;
                 default:
                     System.out.println("No operation selected");
             }
             System.out.println("Result:"+res);
+            logger.info("Result - "+res);
         }
         scanner.close();
-        logger.info("execution ended");
+        logger.info("Execution Ended");
     }
     public static double add(double n1,double n2)
     {
@@ -72,7 +73,7 @@ public class Main {
     {
         return Math.pow(n1,n2);
     }
-    public static double divison(double n1,double n2)
+    public static double division(double n1,double n2)
     {
        if(n2==0)
        {

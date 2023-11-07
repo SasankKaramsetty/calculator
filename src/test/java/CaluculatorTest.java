@@ -54,14 +54,14 @@ public class CaluculatorTest {
         double a = 4;
         double b = 2;
         double expectedResult = 2;
-        Assert.assertEquals(expectedResult, caluculator.divison(a,b),0.01);
+        Assert.assertEquals(expectedResult, caluculator.division(a,b),0.01);
     }
     @Test
     public void test_div_negative(){
         double a = 1;
         double b = 2;
         double expectedResult = 0;
-        Assert.assertNotEquals(expectedResult, caluculator.divison(a,b),0.01);
+        Assert.assertNotEquals(expectedResult, caluculator.division(a,b),0.01);
     }
     @Test
     public void test_pow_positive(){

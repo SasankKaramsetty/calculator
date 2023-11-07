@@ -1,1 +1,15 @@
-2023-10-29 00:34:59.540 [main] INFO  org.example.Main - execution ended
+
+2023-11-07 22:19:48.140 [main] INFO  org.example.Main - Execution Started
+2023-11-07 22:20:00.361 [main] INFO  org.example.Main - 3.0 power 5.0
+2023-11-07 22:20:00.365 [main] INFO  org.example.Main - Result - 243.0
+2023-11-07 22:20:08.324 [main] INFO  org.example.Main - Execution Ended
+2023-11-07 22:21:26.966 [main] INFO  org.example.Main - Execution Started
+2023-11-07 22:21:41.753 [main] INFO  org.example.Main - 1.0 add 99.0
+2023-11-07 22:21:41.757 [main] INFO  org.example.Main - Result - 100.0
+2023-11-07 22:21:53.873 [main] INFO  org.example.Main - 52.0 subract 43.0
+2023-11-07 22:21:53.874 [main] INFO  org.example.Main - Result - 9.0
+2023-11-07 22:22:02.119 [main] INFO  org.example.Main - 5.0 multiply 4.0
+2023-11-07 22:22:02.120 [main] INFO  org.example.Main - Result - 20.0
+2023-11-07 22:22:12.520 [main] INFO  org.example.Main - 2.0 power 5.0
+2023-11-07 22:22:12.520 [main] INFO  org.example.Main - Result - 32.0
+2023-11-07 22:22:15.194 [main] INFO  org.example.Main - Execution Ended
