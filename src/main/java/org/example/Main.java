@@ -15,7 +15,7 @@ public class Main {
             
             System.out.println("1 addition ");
             System.out.println("2 subtraction");
-            System.out.println("3 *");
+            System.out.println("3 multiplication");
             System.out.println("4 /");
             System.out.println("5 power");
             int selection=scanner.nextInt();
