@@ -17,7 +17,7 @@ public class Main {
             System.out.println("2 subtraction");
             System.out.println("3 multiplication");
             System.out.println("4 Divison");
-            System.out.println("5 power");
+            System.out.println("5 power ");
             int selection=scanner.nextInt();
             double res=0.0;
             if(selection==6)
